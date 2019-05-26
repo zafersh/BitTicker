@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E9B271A5229B128D0008C923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271A4229B128D0008C923 /* AppDelegate.swift */; };
-		E9B271A7229B128D0008C923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271A6229B128D0008C923 /* ViewController.swift */; };
-		E9B271AA229B128D0008C923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B271A8229B128D0008C923 /* Main.storyboard */; };
 		E9B271AC229B12910008C923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B271AB229B12910008C923 /* Assets.xcassets */; };
 		E9B271AF229B12910008C923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B271AD229B12910008C923 /* LaunchScreen.storyboard */; };
 		E9B271BA229B12910008C923 /* PoloniexSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271B9229B12910008C923 /* PoloniexSampleTests.swift */; };
 		E9B271C5229B12910008C923 /* PoloniexSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271C4229B12910008C923 /* PoloniexSampleUITests.swift */; };
+		E9B271D7229B143A0008C923 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271D5229B143A0008C923 /* LoginViewController.swift */; };
+		E9B271D8229B143A0008C923 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B271D6229B143A0008C923 /* LoginViewController.xib */; };
+		E9B271DC229B15600008C923 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271DA229B15600008C923 /* SignUpViewController.swift */; };
+		E9B271DD229B15600008C923 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B271DB229B15600008C923 /* SignUpViewController.xib */; };
+		E9B271E1229B15960008C923 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271DF229B15960008C923 /* HomeViewController.swift */; };
+		E9B271E2229B15960008C923 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B271E0229B15960008C923 /* HomeViewController.xib */; };
+		E9B271E7229B1CD20008C923 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271E6229B1CD20008C923 /* UIViewController+Additions.swift */; };
+		E9B271E9229B230E0008C923 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9B271E8229B230E0008C923 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +42,6 @@
 /* Begin PBXFileReference section */
 		E9B271A1229B128D0008C923 /* PoloniexSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoloniexSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B271A4229B128D0008C923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9B271A6229B128D0008C923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9B271A9229B128D0008C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9B271AB229B12910008C923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B271AE229B12910008C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9B271B0229B12910008C923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		E9B271C0229B12910008C923 /* PoloniexSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoloniexSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B271C4229B12910008C923 /* PoloniexSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoloniexSampleUITests.swift; sourceTree = "<group>"; };
 		E9B271C6229B12910008C923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B271D5229B143A0008C923 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9B271D6229B143A0008C923 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E9B271DA229B15600008C923 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E9B271DB229B15600008C923 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		E9B271DF229B15960008C923 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E9B271E0229B15960008C923 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E9B271E6229B1CD20008C923 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		E9B271E8229B230E0008C923 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,9 @@
 		E9B271A3229B128D0008C923 /* PoloniexSample */ = {
 			isa = PBXGroup;
 			children = (
-				E9B271A4229B128D0008C923 /* AppDelegate.swift */,
-				E9B271A6229B128D0008C923 /* ViewController.swift */,
-				E9B271A8229B128D0008C923 /* Main.storyboard */,
-				E9B271AB229B12910008C923 /* Assets.xcassets */,
-				E9B271AD229B12910008C923 /* LaunchScreen.storyboard */,
-				E9B271B0229B12910008C923 /* Info.plist */,
+				E9B271D2229B12F50008C923 /* App */,
+				E9B271E3229B15C90008C923 /* Extensions */,
+				E9B271D3229B13900008C923 /* Views */,
 			);
 			path = PoloniexSample;
 			sourceTree = "<group>";
@@ -123,6 +132,63 @@
 				E9B271C6229B12910008C923 /* Info.plist */,
 			);
 			path = PoloniexSampleUITests;
+			sourceTree = "<group>";
+		};
+		E9B271D2229B12F50008C923 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271AB229B12910008C923 /* Assets.xcassets */,
+				E9B271A4229B128D0008C923 /* AppDelegate.swift */,
+				E9B271B0229B12910008C923 /* Info.plist */,
+				E9B271E8229B230E0008C923 /* GoogleService-Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E9B271D3229B13900008C923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271DE229B158B0008C923 /* HomeView */,
+				E9B271D4229B13900008C923 /* LoginView */,
+				E9B271D9229B15520008C923 /* SignUpView */,
+				E9B271AD229B12910008C923 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9B271D4229B13900008C923 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271D5229B143A0008C923 /* LoginViewController.swift */,
+				E9B271D6229B143A0008C923 /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		E9B271D9229B15520008C923 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271DA229B15600008C923 /* SignUpViewController.swift */,
+				E9B271DB229B15600008C923 /* SignUpViewController.xib */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		E9B271DE229B158B0008C923 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271DF229B15960008C923 /* HomeViewController.swift */,
+				E9B271E0229B15960008C923 /* HomeViewController.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		E9B271E3229B15C90008C923 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9B271E6229B1CD20008C923 /* UIViewController+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B271D8229B143A0008C923 /* LoginViewController.xib in Resources */,
 				E9B271AF229B12910008C923 /* LaunchScreen.storyboard in Resources */,
+				E9B271E2229B15960008C923 /* HomeViewController.xib in Resources */,
+				E9B271DD229B15600008C923 /* SignUpViewController.xib in Resources */,
 				E9B271AC229B12910008C923 /* Assets.xcassets in Resources */,
-				E9B271AA229B128D0008C923 /* Main.storyboard in Resources */,
+				E9B271E9229B230E0008C923 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9B271A7229B128D0008C923 /* ViewController.swift in Sources */,
+				E9B271DC229B15600008C923 /* SignUpViewController.swift in Sources */,
+				E9B271E7229B1CD20008C923 /* UIViewController+Additions.swift in Sources */,
+				E9B271D7229B143A0008C923 /* LoginViewController.swift in Sources */,
 				E9B271A5229B128D0008C923 /* AppDelegate.swift in Sources */,
+				E9B271E1229B15960008C923 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9B271A8229B128D0008C923 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9B271A9229B128D0008C923 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9B271AD229B12910008C923 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7B2B4L8G9;
-				INFOPLIST_FILE = PoloniexSample/Info.plist;
+				INFOPLIST_FILE = PoloniexSample/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7B2B4L8G9;
-				INFOPLIST_FILE = PoloniexSample/Info.plist;
+				INFOPLIST_FILE = PoloniexSample/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

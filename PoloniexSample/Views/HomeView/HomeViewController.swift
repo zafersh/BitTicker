@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  PoloniexSample
 //
 //  Created by Thafer Shahin on 5/26/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+/// Home View Controller
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
