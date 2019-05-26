@@ -9,12 +9,16 @@
 import UIKit
 import Firebase
 
+import Starscream
+
 /// Home View Controller
 class HomeViewController: UIViewController {
     
     // MARK:- Properties
     
     @IBOutlet weak var welcomeLbl: UILabel!
+    
+    var socket = WebSocket(url: URL(string: "wss://api2.poloniex.com")!)
     
     // MARK: - HomeViewController
     
@@ -31,6 +35,13 @@ class HomeViewController: UIViewController {
     func presentLoginView(animated : Bool) {
         let navController = UINavigationController(rootViewController: LoginViewController())
         self.present(navController, animated: animated, completion: nil)
+    }
+    
+    /// Subscribe to web socket
+    /// TODO: Wrap the web socket into observable.
+    func subscribeToWebSocket() {
+        self.socket.delegate = self
+        self.socket.connect()
     }
     
     // MARK: - UIViewController
@@ -57,6 +68,8 @@ class HomeViewController: UIViewController {
                     self.welcomeLbl.alpha = 1
                 })
                 
+                self.subscribeToWebSocket()
+                
             }
             
         } else {
@@ -65,4 +78,27 @@ class HomeViewController: UIViewController {
         
     }
 
+}
+
+extension HomeViewController : WebSocketDelegate {
+    
+    func websocketDidConnect(socket: WebSocketClient) {
+        print("+++++ websocketDidConnect")
+        
+//        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
+        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"203\" }")
+    }
+    
+    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
+        print("+++++ websocketDidDisconnect")
+    }
+    
+    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        print("+++++ websocketDidReceiveMessage: \(text)")
+    }
+    
+    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
+        print("+++++ websocketDidReceiveData")
+    }
+    
 }

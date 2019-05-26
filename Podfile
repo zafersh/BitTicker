@@ -9,6 +9,7 @@ target 'PoloniexSample' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Starscream', '~> 3.0.2'
 
   target 'PoloniexSampleTests' do
     inherit! :search_paths
