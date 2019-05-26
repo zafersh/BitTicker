@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D955D5EEBC538088DC33341 /* Pods_PoloniexSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B56616FB84145F03D811D4F /* Pods_PoloniexSampleUITests.framework */; };
+		2D7B8B08B9A7BE6BC7CB5B18 /* Pods_PoloniexSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B068B75AFE83A28E0DA7FBAB /* Pods_PoloniexSample.framework */; };
+		686ED0991CA45232ED3AA366 /* Pods_PoloniexSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0042B755783935327F31E17E /* Pods_PoloniexSampleTests.framework */; };
 		E9B271A5229B128D0008C923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B271A4229B128D0008C923 /* AppDelegate.swift */; };
 		E9B271AC229B12910008C923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B271AB229B12910008C923 /* Assets.xcassets */; };
 		E9B271AF229B12910008C923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B271AD229B12910008C923 /* LaunchScreen.storyboard */; };
@@ -40,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0042B755783935327F31E17E /* Pods_PoloniexSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoloniexSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		106BFF9A184A043E9DD18415 /* Pods-PoloniexSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSample/Pods-PoloniexSample.debug.xcconfig"; sourceTree = "<group>"; };
+		1B56616FB84145F03D811D4F /* Pods_PoloniexSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoloniexSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8A35DAAE0A853ED6BB4E7C /* Pods-PoloniexSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSample/Pods-PoloniexSample.release.xcconfig"; sourceTree = "<group>"; };
+		56C1960B3D38F64753340D1A /* Pods-PoloniexSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSampleUITests/Pods-PoloniexSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65D7B988E483A83EEE0C5E5D /* Pods-PoloniexSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSampleTests/Pods-PoloniexSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		882B1EC7EA384768535E03F6 /* Pods-PoloniexSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSampleUITests/Pods-PoloniexSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B068B75AFE83A28E0DA7FBAB /* Pods_PoloniexSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoloniexSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F89677B12170C6F2BC2BDE /* Pods-PoloniexSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoloniexSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoloniexSampleTests/Pods-PoloniexSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B271A1229B128D0008C923 /* PoloniexSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoloniexSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B271A4229B128D0008C923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9B271AB229B12910008C923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7B8B08B9A7BE6BC7CB5B18 /* Pods_PoloniexSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686ED0991CA45232ED3AA366 /* Pods_PoloniexSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D955D5EEBC538088DC33341 /* Pods_PoloniexSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A0AFF39585BB2821D81495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				106BFF9A184A043E9DD18415 /* Pods-PoloniexSample.debug.xcconfig */,
+				2B8A35DAAE0A853ED6BB4E7C /* Pods-PoloniexSample.release.xcconfig */,
+				D3F89677B12170C6F2BC2BDE /* Pods-PoloniexSampleTests.debug.xcconfig */,
+				65D7B988E483A83EEE0C5E5D /* Pods-PoloniexSampleTests.release.xcconfig */,
+				882B1EC7EA384768535E03F6 /* Pods-PoloniexSampleUITests.debug.xcconfig */,
+				56C1960B3D38F64753340D1A /* Pods-PoloniexSampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82B9D55EDA43F96506E66D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B068B75AFE83A28E0DA7FBAB /* Pods_PoloniexSample.framework */,
+				0042B755783935327F31E17E /* Pods_PoloniexSampleTests.framework */,
+				1B56616FB84145F03D811D4F /* Pods_PoloniexSampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9B27198229B128C0008C923 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +131,8 @@
 				E9B271B8229B12910008C923 /* PoloniexSampleTests */,
 				E9B271C3229B12910008C923 /* PoloniexSampleUITests */,
 				E9B271A2229B128D0008C923 /* Products */,
+				75A0AFF39585BB2821D81495 /* Pods */,
+				82B9D55EDA43F96506E66D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B271C9229B12910008C923 /* Build configuration list for PBXNativeTarget "PoloniexSample" */;
 			buildPhases = (
+				E13445B137596EECF1AE57D9 /* [CP] Check Pods Manifest.lock */,
 				E9B2719D229B128C0008C923 /* Sources */,
 				E9B2719E229B128C0008C923 /* Frameworks */,
 				E9B2719F229B128C0008C923 /* Resources */,
+				975BCAA705741B29BA871EA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B271CC229B12910008C923 /* Build configuration list for PBXNativeTarget "PoloniexSampleTests" */;
 			buildPhases = (
+				EE8FF8E96E8A910B66401106 /* [CP] Check Pods Manifest.lock */,
 				E9B271B1229B12910008C923 /* Sources */,
 				E9B271B2229B12910008C923 /* Frameworks */,
 				E9B271B3229B12910008C923 /* Resources */,
@@ -233,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B271CF229B12910008C923 /* Build configuration list for PBXNativeTarget "PoloniexSampleUITests" */;
 			buildPhases = (
+				FC4155A37DE2E8E469923279 /* [CP] Check Pods Manifest.lock */,
 				E9B271BC229B12910008C923 /* Sources */,
 				E9B271BD229B12910008C923 /* Frameworks */,
 				E9B271BE229B12910008C923 /* Resources */,
@@ -319,6 +363,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		975BCAA705741B29BA871EA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PoloniexSample/Pods-PoloniexSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoloniexSample/Pods-PoloniexSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13445B137596EECF1AE57D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoloniexSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8FF8E96E8A910B66401106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoloniexSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4155A37DE2E8E469923279 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoloniexSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9B2719D229B128C0008C923 /* Sources */ = {
@@ -494,6 +635,7 @@
 		};
 		E9B271CA229B12910008C923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106BFF9A184A043E9DD18415 /* Pods-PoloniexSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +654,7 @@
 		};
 		E9B271CB229B12910008C923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8A35DAAE0A853ED6BB4E7C /* Pods-PoloniexSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +673,7 @@
 		};
 		E9B271CD229B12910008C923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F89677B12170C6F2BC2BDE /* Pods-PoloniexSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +695,7 @@
 		};
 		E9B271CE229B12910008C923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D7B988E483A83EEE0C5E5D /* Pods-PoloniexSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +717,7 @@
 		};
 		E9B271D0229B12910008C923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882B1EC7EA384768535E03F6 /* Pods-PoloniexSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +738,7 @@
 		};
 		E9B271D1229B12910008C923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C1960B3D38F64753340D1A /* Pods-PoloniexSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
