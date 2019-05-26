@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 /// Login View Controller
 class LoginViewController: UIViewController {
@@ -25,6 +26,36 @@ class LoginViewController: UIViewController {
     ///
     /// - Parameter sender: <#sender description#>
     @IBAction func loginBtnTapped(_ sender: Any) {
+        let email = self.emailTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let password = self.passwordTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        
+        if email.isEmpty || password.isEmpty {
+            self.alert(title: "Error", message: "Please fill all fields.")
+            return
+        }
+        
+        self.loginWith(email: email, password: password)
+    }
+    
+    /// Login for provided email and password with FireBase.
+    ///
+    /// - Parameters:
+    ///   - email: <#email description#>
+    ///   - password: <#password description#>
+    func loginWith(email : String, password : String) {
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            // Make sure no error happened.
+            if let e = error {
+                print("Error: \(e)")
+                self.alert(title: "Error", message: e.localizedDescription)
+                return
+            }
+            
+            self.dismiss(animated: true, completion: nil)
+            
+        }
         
     }
     
@@ -42,7 +73,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Polonies Sample"
+        
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        
+        
     }
 
 }
