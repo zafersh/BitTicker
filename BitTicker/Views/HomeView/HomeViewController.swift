@@ -9,8 +9,6 @@
 import UIKit
 import Firebase
 
-import Starscream
-
 /// Home View Controller
 class HomeViewController: UIViewController {
     
@@ -18,12 +16,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLbl: UILabel!
     
-    var socket = WebSocket(url: URL(string: "wss://api2.poloniex.com")!)
+    var poloniexService : BitPoloniexService!
     
     // MARK: - HomeViewController
     
     @objc func signout() {
         do {
+            self.poloniexService.unsubscribeToWebSocket()
             try Auth.auth().signOut()
             self.presentLoginView(animated: true)
         } catch let error {
@@ -37,19 +36,15 @@ class HomeViewController: UIViewController {
         self.present(navController, animated: animated, completion: nil)
     }
     
-    /// Subscribe to web socket
-    /// TODO: Wrap the web socket into observable.
-    func subscribeToWebSocket() {
-        self.socket.delegate = self
-        self.socket.connect()
-    }
-    
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(signout))
+        
+        // Initialize poloniex service.
+        self.poloniexService = BitPoloniexService()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +63,7 @@ class HomeViewController: UIViewController {
                     self.welcomeLbl.alpha = 1
                 })
                 
-                self.subscribeToWebSocket()
+                self.poloniexService.subscribeToWebSocket()
                 
             }
             
@@ -78,27 +73,4 @@ class HomeViewController: UIViewController {
         
     }
 
-}
-
-extension HomeViewController : WebSocketDelegate {
-    
-    func websocketDidConnect(socket: WebSocketClient) {
-        print("+++++ websocketDidConnect")
-        
-//        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
-        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"203\" }")
-    }
-    
-    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        print("+++++ websocketDidDisconnect")
-    }
-    
-    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        print("+++++ websocketDidReceiveMessage: \(text)")
-    }
-    
-    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
-        print("+++++ websocketDidReceiveData")
-    }
-    
 }

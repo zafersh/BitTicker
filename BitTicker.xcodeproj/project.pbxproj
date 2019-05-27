@@ -23,6 +23,7 @@
 		E9E85160229C932D00A6B087 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E85159229C932D00A6B087 /* SignUpViewController.xib */; };
 		E9E85161229C932D00A6B087 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E8515B229C932D00A6B087 /* LoginViewController.xib */; };
 		E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8515C229C932D00A6B087 /* LoginViewController.swift */; };
+		E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85164229C99F400A6B087 /* BitPoloniexService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		E9E85159229C932D00A6B087 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E9E8515B229C932D00A6B087 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E9E8515C229C932D00A6B087 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9E85164229C99F400A6B087 /* BitPoloniexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPoloniexService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				E9E8514D229C91CF00A6B087 /* App */,
 				E9E8514E229C91DE00A6B087 /* Extensions */,
+				E9E85163229C99E000A6B087 /* Models */,
 				E9E85151229C91E700A6B087 /* Views */,
 			);
 			path = BitTicker;
@@ -229,6 +232,14 @@
 				E9E8515C229C932D00A6B087 /* LoginViewController.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		E9E85163229C99E000A6B087 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85164229C99F400A6B087 /* BitPoloniexService.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */,
+				E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */,
 				E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */,
 				E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */,
 				E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */,
