@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-//  PoloniexSample
+//  BitTracker
 //
 //  Created by Thafer Shahin on 5/26/19.
 //  Copyright © 2019 Thafer Shahin. All rights reserved.
@@ -53,7 +53,7 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "Poloniex Sample"
+        self.navigationItem.title = "BitTracker"
         
         if let currentUser = Auth.auth().currentUser {
             

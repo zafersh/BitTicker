@@ -1,15 +1,15 @@
 //
-//  PoloniexSampleTests.swift
-//  PoloniexSampleTests
+//  BitTickerTests.swift
+//  BitTickerTests
 //
-//  Created by Thafer Shahin on 5/26/19.
+//  Created by Thafer Shahin on 5/28/19.
 //  Copyright © 2019 Thafer Shahin. All rights reserved.
 //
 
 import XCTest
-@testable import PoloniexSample
+@testable import BitTicker
 
-class PoloniexSampleTests: XCTestCase {
+class BitTickerTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,6 +1,6 @@
 //
 //  LoginViewController.swift
-//  PoloniexSample
+//  BitTracker
 //
 //  Created by Thafer Shahin on 5/26/19.
 //  Copyright © 2019 Thafer Shahin. All rights reserved.
@@ -73,7 +73,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Polonies Sample"
+        self.navigationItem.title = "BitTracker"
         
         let backButton = UIBarButtonItem()
         backButton.title = "Back"

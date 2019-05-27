@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PoloniexSample
+//  BitTicker
 //
-//  Created by Thafer Shahin on 5/26/19.
+//  Created by Thafer Shahin on 5/28/19.
 //  Copyright © 2019 Thafer Shahin. All rights reserved.
 //
 
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Show root view controller.
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-//        let navController = UINavigationController(rootViewController: LoginViewController())
+        //        let navController = UINavigationController(rootViewController: LoginViewController())
         let navController = UINavigationController(rootViewController: HomeViewController())
         self.window?.rootViewController = navController
         

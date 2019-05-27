@@ -1,6 +1,6 @@
 //
 //  SignUpViewController.swift
-//  PoloniexSample
+//  BitTracker
 //
 //  Created by Thafer Shahin on 5/26/19.
 //  Copyright © 2019 Thafer Shahin. All rights reserved.

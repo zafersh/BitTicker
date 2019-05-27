@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>312564241098-npavd7p5s8us2p5f81p7t0jv9tvgk6ff.apps.googleusercontent.com</string>
+	<string>940586732773-rreb17i5bgak15o2ehhjrje3m4opd166.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.312564241098-npavd7p5s8us2p5f81p7t0jv9tvgk6ff</string>
+	<string>com.googleusercontent.apps.940586732773-rreb17i5bgak15o2ehhjrje3m4opd166</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCnPPco4dOueATmsHaELSK9LzuDk9OHbuI</string>
+	<string>AIzaSyBQoHIzMhXC4Ars-GsJ7t8pQFzRDEmDF4o</string>
 	<key>GCM_SENDER_ID</key>
-	<string>312564241098</string>
+	<string>940586732773</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.thafershahin.PoloniexSample</string>
+	<string>com.thafershahin.BitTicker</string>
 	<key>PROJECT_ID</key>
-	<string>poloniexsample</string>
+	<string>bitticker-9a9e6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>poloniexsample.appspot.com</string>
+	<string>bitticker-9a9e6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:312564241098:ios:556af6adb0dfd2b5</string>
+	<string>1:940586732773:ios:f285aebf9daa9ed2</string>
 	<key>DATABASE_URL</key>
-	<string>https://poloniexsample.firebaseio.com</string>
+	<string>https://bitticker-9a9e6.firebaseio.com</string>
 </dict>
 </plist>

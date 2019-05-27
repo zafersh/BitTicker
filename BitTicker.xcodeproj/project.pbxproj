@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65E5D0C5BE0E3288C0D03EEF /* Pods_BitTickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72BB09DE825F9BB3EF78C8 /* Pods_BitTickerTests.framework */; };
+		CA59633111DCF739AD646690 /* Pods_BitTickerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531DC7218E367088A66EC518 /* Pods_BitTickerUITests.framework */; };
+		D03DC609D16FC3C31A7A3F94 /* Pods_BitTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0265A16637B808D7B506ADA3 /* Pods_BitTicker.framework */; };
+		E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8511F229C915700A6B087 /* AppDelegate.swift */; };
+		E9E85127229C915800A6B087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E85126229C915800A6B087 /* Assets.xcassets */; };
+		E9E8512A229C915800A6B087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E85128229C915800A6B087 /* LaunchScreen.storyboard */; };
+		E9E85135229C915800A6B087 /* BitTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85134229C915800A6B087 /* BitTickerTests.swift */; };
+		E9E85140229C915800A6B087 /* BitTickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8513F229C915800A6B087 /* BitTickerUITests.swift */; };
+		E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8514F229C91DE00A6B087 /* UIViewController+Additions.swift */; };
+		E9E85153229C92DC00A6B087 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9E85152229C92DC00A6B087 /* GoogleService-Info.plist */; };
+		E9E8515D229C932D00A6B087 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E85155229C932D00A6B087 /* HomeViewController.xib */; };
+		E9E8515E229C932D00A6B087 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85156229C932D00A6B087 /* HomeViewController.swift */; };
+		E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85158229C932D00A6B087 /* SignUpViewController.swift */; };
+		E9E85160229C932D00A6B087 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E85159229C932D00A6B087 /* SignUpViewController.xib */; };
+		E9E85161229C932D00A6B087 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E8515B229C932D00A6B087 /* LoginViewController.xib */; };
+		E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8515C229C932D00A6B087 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9E85131229C915800A6B087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E85114229C915700A6B087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E8511B229C915700A6B087;
+			remoteInfo = BitTicker;
+		};
+		E9E8513C229C915800A6B087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E85114229C915700A6B087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E8511B229C915700A6B087;
+			remoteInfo = BitTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0265A16637B808D7B506ADA3 /* Pods_BitTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B2D245E4EB9C21D6A99EB /* Pods-BitTickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerUITests/Pods-BitTickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50AEA32F2C38F5928390D75B /* Pods-BitTickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerUITests/Pods-BitTickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		531DC7218E367088A66EC518 /* Pods_BitTickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58EC8611F7C9E7A08AF4EF38 /* Pods-BitTickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerTests/Pods-BitTickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C445F8FFEFC3C58B2168E7B /* Pods-BitTickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerTests/Pods-BitTickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3782E5B36D2595213EA45BA /* Pods-BitTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.release.xcconfig"; sourceTree = "<group>"; };
+		B77CF079033651185D75F190 /* Pods-BitTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		BC72BB09DE825F9BB3EF78C8 /* Pods_BitTickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E8511C229C915700A6B087 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E8511F229C915700A6B087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9E85126229C915800A6B087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E85129229C915800A6B087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9E8512B229C915800A6B087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E85130229C915800A6B087 /* BitTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E85134229C915800A6B087 /* BitTickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTickerTests.swift; sourceTree = "<group>"; };
+		E9E85136229C915800A6B087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E8513B229C915800A6B087 /* BitTickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitTickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E8513F229C915800A6B087 /* BitTickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTickerUITests.swift; sourceTree = "<group>"; };
+		E9E85141229C915800A6B087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E8514F229C91DE00A6B087 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		E9E85152229C92DC00A6B087 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9E85155229C932D00A6B087 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E9E85156229C932D00A6B087 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E9E85158229C932D00A6B087 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E9E85159229C932D00A6B087 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		E9E8515B229C932D00A6B087 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E9E8515C229C932D00A6B087 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E85119229C915700A6B087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03DC609D16FC3C31A7A3F94 /* Pods_BitTicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E8512D229C915800A6B087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E5D0C5BE0E3288C0D03EEF /* Pods_BitTickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E85138229C915800A6B087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA59633111DCF739AD646690 /* Pods_BitTickerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638D37D199CFD28161B51DB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B77CF079033651185D75F190 /* Pods-BitTicker.debug.xcconfig */,
+				A3782E5B36D2595213EA45BA /* Pods-BitTicker.release.xcconfig */,
+				8C445F8FFEFC3C58B2168E7B /* Pods-BitTickerTests.debug.xcconfig */,
+				58EC8611F7C9E7A08AF4EF38 /* Pods-BitTickerTests.release.xcconfig */,
+				148B2D245E4EB9C21D6A99EB /* Pods-BitTickerUITests.debug.xcconfig */,
+				50AEA32F2C38F5928390D75B /* Pods-BitTickerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6F189301D23425D4C93901D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0265A16637B808D7B506ADA3 /* Pods_BitTicker.framework */,
+				BC72BB09DE825F9BB3EF78C8 /* Pods_BitTickerTests.framework */,
+				531DC7218E367088A66EC518 /* Pods_BitTickerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9E85113229C915700A6B087 = {
+			isa = PBXGroup;
+			children = (
+				E9E8511E229C915700A6B087 /* BitTicker */,
+				E9E85133229C915800A6B087 /* BitTickerTests */,
+				E9E8513E229C915800A6B087 /* BitTickerUITests */,
+				E9E8511D229C915700A6B087 /* Products */,
+				638D37D199CFD28161B51DB3 /* Pods */,
+				C6F189301D23425D4C93901D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E8511D229C915700A6B087 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8511C229C915700A6B087 /* BitTicker.app */,
+				E9E85130229C915800A6B087 /* BitTickerTests.xctest */,
+				E9E8513B229C915800A6B087 /* BitTickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E8511E229C915700A6B087 /* BitTicker */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8514D229C91CF00A6B087 /* App */,
+				E9E8514E229C91DE00A6B087 /* Extensions */,
+				E9E85151229C91E700A6B087 /* Views */,
+			);
+			path = BitTicker;
+			sourceTree = "<group>";
+		};
+		E9E85133229C915800A6B087 /* BitTickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85134229C915800A6B087 /* BitTickerTests.swift */,
+				E9E85136229C915800A6B087 /* Info.plist */,
+			);
+			path = BitTickerTests;
+			sourceTree = "<group>";
+		};
+		E9E8513E229C915800A6B087 /* BitTickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8513F229C915800A6B087 /* BitTickerUITests.swift */,
+				E9E85141229C915800A6B087 /* Info.plist */,
+			);
+			path = BitTickerUITests;
+			sourceTree = "<group>";
+		};
+		E9E8514D229C91CF00A6B087 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8511F229C915700A6B087 /* AppDelegate.swift */,
+				E9E85126229C915800A6B087 /* Assets.xcassets */,
+				E9E85152229C92DC00A6B087 /* GoogleService-Info.plist */,
+				E9E8512B229C915800A6B087 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E9E8514E229C91DE00A6B087 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8514F229C91DE00A6B087 /* UIViewController+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9E85151229C91E700A6B087 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85154229C932D00A6B087 /* HomeView */,
+				E9E8515A229C932D00A6B087 /* LoginView */,
+				E9E85157229C932D00A6B087 /* SignUpView */,
+				E9E85128229C915800A6B087 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9E85154229C932D00A6B087 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85155229C932D00A6B087 /* HomeViewController.xib */,
+				E9E85156229C932D00A6B087 /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		E9E85157229C932D00A6B087 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85158229C932D00A6B087 /* SignUpViewController.swift */,
+				E9E85159229C932D00A6B087 /* SignUpViewController.xib */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		E9E8515A229C932D00A6B087 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8515B229C932D00A6B087 /* LoginViewController.xib */,
+				E9E8515C229C932D00A6B087 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E8511B229C915700A6B087 /* BitTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E85144229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTicker" */;
+			buildPhases = (
+				BC8E681D4121B2130493395D /* [CP] Check Pods Manifest.lock */,
+				E9E85118229C915700A6B087 /* Sources */,
+				E9E85119229C915700A6B087 /* Frameworks */,
+				E9E8511A229C915700A6B087 /* Resources */,
+				59248CB2C2554D07EDA29465 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitTicker;
+			productName = BitTicker;
+			productReference = E9E8511C229C915700A6B087 /* BitTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9E8512F229C915800A6B087 /* BitTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E85147229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTickerTests" */;
+			buildPhases = (
+				3F0468CDDD5BD30B56FA3089 /* [CP] Check Pods Manifest.lock */,
+				E9E8512C229C915800A6B087 /* Sources */,
+				E9E8512D229C915800A6B087 /* Frameworks */,
+				E9E8512E229C915800A6B087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E85132229C915800A6B087 /* PBXTargetDependency */,
+			);
+			name = BitTickerTests;
+			productName = BitTickerTests;
+			productReference = E9E85130229C915800A6B087 /* BitTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9E8513A229C915800A6B087 /* BitTickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E8514A229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTickerUITests" */;
+			buildPhases = (
+				3827EABD1AAA09FA39733329 /* [CP] Check Pods Manifest.lock */,
+				E9E85137229C915800A6B087 /* Sources */,
+				E9E85138229C915800A6B087 /* Frameworks */,
+				E9E85139229C915800A6B087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E8513D229C915800A6B087 /* PBXTargetDependency */,
+			);
+			name = BitTickerUITests;
+			productName = BitTickerUITests;
+			productReference = E9E8513B229C915800A6B087 /* BitTickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E85114229C915700A6B087 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Thafer Shahin";
+				TargetAttributes = {
+					E9E8511B229C915700A6B087 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E9E8512F229C915800A6B087 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E9E8511B229C915700A6B087;
+					};
+					E9E8513A229C915800A6B087 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E9E8511B229C915700A6B087;
+					};
+				};
+			};
+			buildConfigurationList = E9E85117229C915700A6B087 /* Build configuration list for PBXProject "BitTicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E85113229C915700A6B087;
+			productRefGroup = E9E8511D229C915700A6B087 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E8511B229C915700A6B087 /* BitTicker */,
+				E9E8512F229C915800A6B087 /* BitTickerTests */,
+				E9E8513A229C915800A6B087 /* BitTickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E8511A229C915700A6B087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E85160229C932D00A6B087 /* SignUpViewController.xib in Resources */,
+				E9E8512A229C915800A6B087 /* LaunchScreen.storyboard in Resources */,
+				E9E85161229C932D00A6B087 /* LoginViewController.xib in Resources */,
+				E9E85127229C915800A6B087 /* Assets.xcassets in Resources */,
+				E9E85153229C92DC00A6B087 /* GoogleService-Info.plist in Resources */,
+				E9E8515D229C932D00A6B087 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E8512E229C915800A6B087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E85139229C915800A6B087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3827EABD1AAA09FA39733329 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitTickerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0468CDDD5BD30B56FA3089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitTickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59248CB2C2554D07EDA29465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC8E681D4121B2130493395D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitTicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E85118229C915700A6B087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */,
+				E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */,
+				E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */,
+				E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */,
+				E9E8515E229C932D00A6B087 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E8512C229C915800A6B087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E85135229C915800A6B087 /* BitTickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E85137229C915800A6B087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E85140229C915800A6B087 /* BitTickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9E85132229C915800A6B087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E8511B229C915700A6B087 /* BitTicker */;
+			targetProxy = E9E85131229C915800A6B087 /* PBXContainerItemProxy */;
+		};
+		E9E8513D229C915800A6B087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E8511B229C915700A6B087 /* BitTicker */;
+			targetProxy = E9E8513C229C915800A6B087 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9E85128229C915800A6B087 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E85129229C915800A6B087 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9E85142229C915800A6B087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9E85143229C915800A6B087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E85145229C915800A6B087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77CF079033651185D75F190 /* Pods-BitTicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = "$(SRCROOT)/BitTicker/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9E85146229C915800A6B087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3782E5B36D2595213EA45BA /* Pods-BitTicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = "$(SRCROOT)/BitTicker/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9E85148229C915800A6B087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C445F8FFEFC3C58B2168E7B /* Pods-BitTickerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = BitTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitTicker.app/BitTicker";
+			};
+			name = Debug;
+		};
+		E9E85149229C915800A6B087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58EC8611F7C9E7A08AF4EF38 /* Pods-BitTickerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = BitTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitTicker.app/BitTicker";
+			};
+			name = Release;
+		};
+		E9E8514B229C915800A6B087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148B2D245E4EB9C21D6A99EB /* Pods-BitTickerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = BitTickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitTicker;
+			};
+			name = Debug;
+		};
+		E9E8514C229C915800A6B087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AEA32F2C38F5928390D75B /* Pods-BitTickerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B2B4L8G9;
+				INFOPLIST_FILE = BitTickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thafershahin.BitTickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitTicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E85117229C915700A6B087 /* Build configuration list for PBXProject "BitTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E85142229C915800A6B087 /* Debug */,
+				E9E85143229C915800A6B087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E85144229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E85145229C915800A6B087 /* Debug */,
+				E9E85146229C915800A6B087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E85147229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E85148229C915800A6B087 /* Debug */,
+				E9E85149229C915800A6B087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E8514A229C915800A6B087 /* Build configuration list for PBXNativeTarget "BitTickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E8514B229C915800A6B087 /* Debug */,
+				E9E8514C229C915800A6B087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9E85114229C915700A6B087 /* Project object */;
+}
