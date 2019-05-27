@@ -6,6 +6,8 @@ target 'BitTicker' do
   use_frameworks!
 
   # Pods for BitTicker
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'

@@ -41,7 +41,7 @@ extension BitPoloniexService : WebSocketDelegate {
         print("+++++ websocketDidConnect")
         
         //        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
-        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"203\" }")
+        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
