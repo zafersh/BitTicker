@@ -23,10 +23,27 @@ class DefaultTickerDataTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heighestBid: UILabel!
     
+    @IBOutlet weak var expandedViewHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var percentChange24Lbl: UILabel!
+    
+    @IBOutlet weak var baseVolume24Lbl: UILabel!
+    
+    @IBOutlet weak var qouteVolume24Lbl: UILabel!
+    
+    @IBOutlet weak var isFrozelLbl: UILabel!
+    
+    @IBOutlet weak var tradePrice24hLbl: UILabel!
+    
+    @IBOutlet weak var tadePrice24lLbl: UILabel!
+    
     // MARK: - DefaultTickerDataTableViewCell
     
-    func configureWithTickerData(tickerData : TickerData, comparePrice : Double) {
-        self.currencyPairLbl.text = CurrencyPairID.pairs[tickerData.pairId]
+    func configureWithTickerData(tickerData : TickerData, comparePrice : Double, viewMode : ViewModes) {
+        self.currencyPairLbl.text = "\(CurrencyPairID.pairs[tickerData.pairId]!), \(tickerData.pairId)"
+        
+        // Expand or hide details according to view mode.
+        self.expandedViewHeight.constant = viewMode == ViewModes.DefaultMode ? 0 : 250
         
         // Highlight UI according to compare price and last trade price.
         guard let lastPrice = tickerData.lastTradePrice else {
@@ -51,6 +68,13 @@ class DefaultTickerDataTableViewCell: UITableViewCell {
         self.lastPriceLbl.text = lastPrice.tickerFormattesString()
         self.lowestAskLbl.text = tickerData.lowestAsk.tickerFormattesString()
         self.heighestBid.text = tickerData.highestBid.tickerFormattesString()
+        
+        self.percentChange24Lbl.text = tickerData.percentChange24.tickerFormattesString()
+        self.baseVolume24Lbl.text = tickerData.baseVolume24.tickerFormattesString()
+        self.qouteVolume24Lbl.text = tickerData.quoteVolume24.tickerFormattesString()
+        self.isFrozelLbl.text = (tickerData.isFrozen ?? false) ? "Yes" : "No"
+        self.tradePrice24hLbl.text = tickerData.tradePrice24h.tickerFormattesString()
+        self.tadePrice24lLbl.text = tickerData.tradePrice24l.tickerFormattesString()
     }
     
     /// Reset all UI to default or empty except currency pair label.
@@ -59,6 +83,12 @@ class DefaultTickerDataTableViewCell: UITableViewCell {
         self.lastPriceLbl.text = ""
         self.lowestAskLbl.text = ""
         self.heighestBid.text = ""
+        self.percentChange24Lbl.text = ""
+        self.baseVolume24Lbl.text = ""
+        self.qouteVolume24Lbl.text = ""
+        self.isFrozelLbl.text = ""
+        self.tradePrice24hLbl.text = ""
+        self.tadePrice24lLbl.text = ""
     }
     
     // MARK: - UITableViewCell

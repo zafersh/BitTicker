@@ -82,7 +82,7 @@ extension BitPoloniexService : WebSocketDelegate {
             let quoteVolume24 = Double(tickerComponents[6].trimmingCharacters(in: CharacterSet(charactersIn: "\"")))
             let isFrozen = Bool(tickerComponents[7].trimmingCharacters(in: CharacterSet(charactersIn: "\"")))
             let tradePrice24h = Double(tickerComponents[8].trimmingCharacters(in: CharacterSet(charactersIn: "\"")))
-            let tradePrice24l = Double(tickerComponents[9].trimmingCharacters(in: CharacterSet(charactersIn: "\"")))
+            let tradePrice24l = Double(tickerComponents[9].trimmingCharacters(in: CharacterSet(charactersIn: "\""))) ?? Double(tickerComponents[9].trimmingCharacters(in: CharacterSet(charactersIn: "\"]]")))
             
             let tickerData = TickerData(pairId: pairId, lastTradePrice: lastTradePrice, lowestAsk: lowestAsk, highestBid: highestBid, percentChange24: percentChange24, baseVolume24: baseVolume24, quoteVolume24: quoteVolume24, isFrozen: isFrozen, tradePrice24h: tradePrice24h, tradePrice24l: tradePrice24l)
             

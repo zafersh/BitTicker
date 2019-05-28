@@ -11,6 +11,15 @@ import Firebase
 import RxSwift
 import RxCocoa
 
+/// Enumerable for all possible view modes.
+///
+/// - DefaultMode: <#DefaultMode description#>
+/// - ExpandedMode: <#ExpandedMode description#>
+enum ViewModes {
+    case DefaultMode
+    case ExpandedMode
+}
+
 /// Home View Controller
 class HomeViewController: UIViewController {
     
@@ -29,6 +38,9 @@ class HomeViewController: UIViewController {
     /// Associated view model.
     let viewModel = HomeViewModel()
     
+    /// Current view mode.
+    var viewMode = ViewModes.DefaultMode
+    
     /// Observers dispose bag.
     private let disposeBag = DisposeBag()
     
@@ -46,8 +58,39 @@ class HomeViewController: UIViewController {
     
     // MARK: - IBActions
     
+    /// Reconfigure all table's cells when compare price change.
+    ///
+    /// - Parameter sender: <#sender description#>
     @IBAction func comparePriceValueChanged(_ sender: Any) {
         self.tableView.reloadData()
+    }
+    
+    /// Switch to default view.
+    ///
+    /// - Parameter sender: <#sender description#>
+    @IBAction func defaultViewBtnTapped(_ sender: Any) {
+        if self.viewMode != .DefaultMode {
+            self.viewMode = .DefaultMode
+            UIView.animate(withDuration: 0.2) {
+                self.defaultViewBtn.alpha = 1
+                self.expandViewBtn.alpha = 0.5
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    /// Switch to expanded view.
+    ///
+    /// - Parameter sender: <#sender description#>
+    @IBAction func expandedViewBtnTapped(_ sender: Any) {
+        if self.viewMode != .ExpandedMode {
+            self.viewMode = .ExpandedMode
+            UIView.animate(withDuration: 0.2) {
+                self.defaultViewBtn.alpha = 0.5
+                self.expandViewBtn.alpha = 1
+            }
+            self.tableView.reloadData()
+        }
     }
     
     /// Present login view.
@@ -73,7 +116,7 @@ class HomeViewController: UIViewController {
                    cellType: DefaultTickerDataTableViewCell.self)) {
                     row, tickerData, cell in
                     let comparePrice = self.comparePriceTF.text ?? "0"
-                    cell.configureWithTickerData(tickerData: tickerData.value, comparePrice: Double(comparePrice) ?? 0)
+                    cell.configureWithTickerData(tickerData: tickerData.value, comparePrice: Double(comparePrice) ?? 0, viewMode: self.viewMode)
             }
             .disposed(by: disposeBag)
     }

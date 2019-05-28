@@ -59,6 +59,10 @@
                                 <constraint firstAttribute="width" constant="50" id="ztz-3K-hw4"/>
                             </constraints>
                             <state key="normal" title="Button" image="ExpandView"/>
+                            <state key="highlighted" image="ExpandView"/>
+                            <connections>
+                                <action selector="expandedViewBtnTapped:" destination="-1" eventType="touchUpInside" id="hze-tk-9cc"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZA-qm-q1W">
                             <rect key="frame" x="284" y="40.5" width="50" height="50"/>
@@ -67,6 +71,10 @@
                                 <constraint firstAttribute="height" constant="50" id="Z7i-kB-PGX"/>
                             </constraints>
                             <state key="normal" title="Button" image="DefaultView"/>
+                            <state key="highlighted" image="DefaultView"/>
+                            <connections>
+                                <action selector="defaultViewBtnTapped:" destination="-1" eventType="touchUpInside" id="AAu-2H-8Vb"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compare Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9S-E6-7be">
                             <rect key="frame" x="18" y="55.5" width="114" height="20"/>
