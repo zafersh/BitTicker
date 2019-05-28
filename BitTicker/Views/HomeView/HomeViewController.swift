@@ -16,13 +16,14 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLbl: UILabel!
     
-    var poloniexService : BitPoloniexService!
+    /// Associated view model.
+    let viewModel = HomeViewModel()
     
     // MARK: - HomeViewController
     
     @objc func signout() {
         do {
-            self.poloniexService.unsubscribeToWebSocket()
+            self.viewModel.unsubscribeToWebSocket()
             try Auth.auth().signOut()
             self.presentLoginView(animated: true)
         } catch let error {
@@ -42,9 +43,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(signout))
-        
-        // Initialize poloniex service.
-        self.poloniexService = BitPoloniexService()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,7 +61,7 @@ class HomeViewController: UIViewController {
                     self.welcomeLbl.alpha = 1
                 })
                 
-                self.poloniexService.subscribeToWebSocket()
+                self.viewModel.subscribeToWebSocket()
                 
             }
             

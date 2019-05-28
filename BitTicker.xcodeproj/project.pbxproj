@@ -25,6 +25,7 @@
 		E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8515C229C932D00A6B087 /* LoginViewController.swift */; };
 		E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85164229C99F400A6B087 /* BitPoloniexService.swift */; };
 		E9E85167229CAEA500A6B087 /* TickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85166229CAEA500A6B087 /* TickerData.swift */; };
+		E9E8516A229CC4F200A6B087 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85169229CC4F200A6B087 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E9E8515C229C932D00A6B087 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9E85164229C99F400A6B087 /* BitPoloniexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPoloniexService.swift; sourceTree = "<group>"; };
 		E9E85166229CAEA500A6B087 /* TickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerData.swift; sourceTree = "<group>"; };
+		E9E85169229CC4F200A6B087 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				E9E85155229C932D00A6B087 /* HomeViewController.xib */,
 				E9E85156229C932D00A6B087 /* HomeViewController.swift */,
+				E9E85169229CC4F200A6B087 /* HomeViewModel.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */,
 				E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */,
 				E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */,
+				E9E8516A229CC4F200A6B087 /* HomeViewModel.swift in Sources */,
 				E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */,
 				E9E85167229CAEA500A6B087 /* TickerData.swift in Sources */,
 				E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */,
