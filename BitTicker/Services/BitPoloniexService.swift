@@ -15,8 +15,14 @@ class BitPoloniexService {
     /// Web socket used to connect to Poloniex API.
     var socket = WebSocket(url: URL(string: "wss://api2.poloniex.com")!)
     
+    /// A delegate to be invoked when TickerData is received.
+    weak var delegate : BitPoloniexServiceDelegate?
+    
+    init(delegate : BitPoloniexServiceDelegate?) {
+        self.delegate = delegate
+    }
+    
     /// Subscribe to web socket
-    /// TODO: Wrap the web socket into observable.
     func subscribeToWebSocket() {
         // Do nothing if already connected.
         if self.socket.isConnected == false {
@@ -80,7 +86,10 @@ extension BitPoloniexService : WebSocketDelegate {
             
             let tickerData = TickerData(pairId: pairId, lastTradePrice: lastTradePrice, lowestAsk: lowestAsk, highestBid: highestBid, percentChange24: percentChange24, baseVolume24: baseVolume24, quoteVolume24: quoteVolume24, isFrozen: isFrozen, tradePrice24h: tradePrice24h, tradePrice24l: tradePrice24l)
             
-            // TODO: Update the view model.
+            // Invoke the delegate.
+            if let delegate = self.delegate {
+                delegate.tickerDataReceived(tickerData: tickerData)
+            }
             
         }
         
@@ -89,5 +98,15 @@ extension BitPoloniexService : WebSocketDelegate {
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print("--BitTicker: websocketDidReceiveData")
     }
+    
+}
+
+/// A protocol to be implemented by BitPoloniexService delegate.
+protocol BitPoloniexServiceDelegate : class {
+    
+    /// This function is called when TickerData is received.
+    ///
+    /// - Parameter tickerData: <#tickerData description#>
+    func tickerDataReceived(tickerData : TickerData)
     
 }

@@ -8,16 +8,21 @@
 
 import UIKit
 import Firebase
+import RxSwift
+import RxCocoa
 
 /// Home View Controller
 class HomeViewController: UIViewController {
     
     // MARK:- Properties
     
-    @IBOutlet weak var welcomeLbl: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     /// Associated view model.
     let viewModel = HomeViewModel()
+    
+    /// Observers dispose bag.
+    private let disposeBag = DisposeBag()
     
     // MARK: - HomeViewController
     
@@ -43,6 +48,19 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(signout))
+        
+        // Register custom table view cells.
+        self.tableView.register(DefaultTickerDataTableViewCell.self, forCellReuseIdentifier: DefaultTickerDataTableViewCell.identification)
+        
+        // Bind table view to view model observable data.
+        self.viewModel.data.bind(to: self.tableView
+            .rx
+            .items(cellIdentifier: DefaultTickerDataTableViewCell.identification,
+                   cellType: DefaultTickerDataTableViewCell.self)) {
+                    row, chocolate, cell in
+//                    cell.configureWithChocolate(chocolate: chocolate)
+            }
+            .disposed(by: disposeBag) //5
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,11 +73,7 @@ class HomeViewController: UIViewController {
                 
                 // Show user full name.
                 guard let fullName = snapshot.value as? String else {return}
-                self.welcomeLbl.text = "Welcome \(fullName)"
-                
-                UIView.animate(withDuration: 0.5, animations: {
-                    self.welcomeLbl.alpha = 1
-                })
+                self.navigationItem.prompt = "Welcome \(fullName)"
                 
                 self.viewModel.subscribeToWebSocket()
                 

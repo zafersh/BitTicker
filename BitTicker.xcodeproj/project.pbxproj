@@ -26,6 +26,10 @@
 		E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85164229C99F400A6B087 /* BitPoloniexService.swift */; };
 		E9E85167229CAEA500A6B087 /* TickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85166229CAEA500A6B087 /* TickerData.swift */; };
 		E9E8516A229CC4F200A6B087 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85169229CC4F200A6B087 /* HomeViewModel.swift */; };
+		E9E8516E229CC7E000A6B087 /* CurrencyPairID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8516D229CC7E000A6B087 /* CurrencyPairID.swift */; };
+		E9E85171229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8516F229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift */; };
+		E9E85172229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E85170229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib */; };
+		E9E85174229CD6AB00A6B087 /* UITableViewCell+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		E9E85164229C99F400A6B087 /* BitPoloniexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPoloniexService.swift; sourceTree = "<group>"; };
 		E9E85166229CAEA500A6B087 /* TickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerData.swift; sourceTree = "<group>"; };
 		E9E85169229CC4F200A6B087 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E9E8516D229CC7E000A6B087 /* CurrencyPairID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairID.swift; sourceTree = "<group>"; };
+		E9E8516F229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTickerDataTableViewCell.swift; sourceTree = "<group>"; };
+		E9E85170229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTickerDataTableViewCell.xib; sourceTree = "<group>"; };
+		E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E8514F229C91DE00A6B087 /* UIViewController+Additions.swift */,
+				E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,6 +227,8 @@
 				E9E85155229C932D00A6B087 /* HomeViewController.xib */,
 				E9E85156229C932D00A6B087 /* HomeViewController.swift */,
 				E9E85169229CC4F200A6B087 /* HomeViewModel.swift */,
+				E9E8516F229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift */,
+				E9E85170229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E85166229CAEA500A6B087 /* TickerData.swift */,
+				E9E8516D229CC7E000A6B087 /* CurrencyPairID.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,6 +378,7 @@
 			files = (
 				E9E85160229C932D00A6B087 /* SignUpViewController.xib in Resources */,
 				E9E8512A229C915800A6B087 /* LaunchScreen.storyboard in Resources */,
+				E9E85172229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib in Resources */,
 				E9E85161229C932D00A6B087 /* LoginViewController.xib in Resources */,
 				E9E85127229C915800A6B087 /* Assets.xcassets in Resources */,
 				E9E85153229C92DC00A6B087 /* GoogleService-Info.plist in Resources */,
@@ -501,8 +514,11 @@
 			files = (
 				E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */,
 				E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */,
+				E9E85174229CD6AB00A6B087 /* UITableViewCell+Additions.swift in Sources */,
 				E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */,
+				E9E85171229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift in Sources */,
 				E9E8516A229CC4F200A6B087 /* HomeViewModel.swift in Sources */,
+				E9E8516E229CC7E000A6B087 /* CurrencyPairID.swift in Sources */,
 				E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */,
 				E9E85167229CAEA500A6B087 /* TickerData.swift in Sources */,
 				E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */,
