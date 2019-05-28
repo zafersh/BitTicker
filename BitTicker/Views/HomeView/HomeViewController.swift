@@ -16,6 +16,14 @@ class HomeViewController: UIViewController {
     
     // MARK:- Properties
     
+    @IBOutlet weak var welcomeLbl: UILabel!
+    
+    @IBOutlet weak var comparePriceTF: UITextField!
+    
+    @IBOutlet weak var defaultViewBtn: UIButton!
+    
+    @IBOutlet weak var expandViewBtn: UIButton!
+    
     @IBOutlet weak var tableView: UITableView!
     
     /// Associated view model.
@@ -36,6 +44,12 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func comparePriceValueChanged(_ sender: Any) {
+        self.tableView.reloadData()
+    }
+    
     /// Present login view.
     func presentLoginView(animated : Bool) {
         let navController = UINavigationController(rootViewController: LoginViewController())
@@ -47,20 +61,21 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(signout))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign out", style: .plain, target: self, action: #selector(signout))
         
         // Register custom table view cells.
-        self.tableView.register(DefaultTickerDataTableViewCell.self, forCellReuseIdentifier: DefaultTickerDataTableViewCell.identification)
+        self.tableView.register(UINib(nibName: DefaultTickerDataTableViewCell.identification, bundle: nil), forCellReuseIdentifier: DefaultTickerDataTableViewCell.identification)
         
         // Bind table view to view model observable data.
         self.viewModel.data.bind(to: self.tableView
             .rx
             .items(cellIdentifier: DefaultTickerDataTableViewCell.identification,
                    cellType: DefaultTickerDataTableViewCell.self)) {
-                    row, chocolate, cell in
-//                    cell.configureWithChocolate(chocolate: chocolate)
+                    row, tickerData, cell in
+                    let comparePrice = self.comparePriceTF.text ?? "0"
+                    cell.configureWithTickerData(tickerData: tickerData.value, comparePrice: Double(comparePrice) ?? 0)
             }
-            .disposed(by: disposeBag) //5
+            .disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +88,7 @@ class HomeViewController: UIViewController {
                 
                 // Show user full name.
                 guard let fullName = snapshot.value as? String else {return}
-                self.navigationItem.prompt = "Welcome \(fullName)"
+                self.welcomeLbl.text = "Welcome \(fullName)"
                 
                 self.viewModel.subscribeToWebSocket()
                 

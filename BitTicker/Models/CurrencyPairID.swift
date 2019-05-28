@@ -12,7 +12,7 @@ import Foundation
 /// Please note that in similar it is better to use enum
 class CurrencyPairID {
     
-    let pairs = [177 : "BTC_ARDR",
+    static let pairs = [177 : "BTC_ARDR",
         253 : "BTC_ATOM",
         210 : "BTC_BAT",
         189 : "BTC_BCH",

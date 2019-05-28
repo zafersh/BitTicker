@@ -30,6 +30,8 @@
 		E9E85171229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8516F229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift */; };
 		E9E85172229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E85170229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib */; };
 		E9E85174229CD6AB00A6B087 /* UITableViewCell+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */; };
+		E9E85176229D46B600A6B087 /* Numbers+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85175229D46B600A6B087 /* Numbers+Additions.swift */; };
+		E9E85178229D4D9100A6B087 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E85177229D4D9100A6B087 /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		E9E8516F229CD63A00A6B087 /* DefaultTickerDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTickerDataTableViewCell.swift; sourceTree = "<group>"; };
 		E9E85170229CD63A00A6B087 /* DefaultTickerDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTickerDataTableViewCell.xib; sourceTree = "<group>"; };
 		E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Additions.swift"; sourceTree = "<group>"; };
+		E9E85175229D46B600A6B087 /* Numbers+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numbers+Additions.swift"; sourceTree = "<group>"; };
+		E9E85177229D4D9100A6B087 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 			children = (
 				E9E8514F229C91DE00A6B087 /* UIViewController+Additions.swift */,
 				E9E85173229CD6AB00A6B087 /* UITableViewCell+Additions.swift */,
+				E9E85175229D46B600A6B087 /* Numbers+Additions.swift */,
+				E9E85177229D4D9100A6B087 /* UIColor+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -513,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E85120229C915700A6B087 /* AppDelegate.swift in Sources */,
+				E9E85178229D4D9100A6B087 /* UIColor+Additions.swift in Sources */,
 				E9E85165229C99F400A6B087 /* BitPoloniexService.swift in Sources */,
 				E9E85174229CD6AB00A6B087 /* UITableViewCell+Additions.swift in Sources */,
 				E9E85150229C91DE00A6B087 /* UIViewController+Additions.swift in Sources */,
@@ -520,6 +527,7 @@
 				E9E8516A229CC4F200A6B087 /* HomeViewModel.swift in Sources */,
 				E9E8516E229CC7E000A6B087 /* CurrencyPairID.swift in Sources */,
 				E9E8515F229C932D00A6B087 /* SignUpViewController.swift in Sources */,
+				E9E85176229D46B600A6B087 /* Numbers+Additions.swift in Sources */,
 				E9E85167229CAEA500A6B087 /* TickerData.swift in Sources */,
 				E9E85162229C932D00A6B087 /* LoginViewController.swift in Sources */,
 				E9E8515E229C932D00A6B087 /* HomeViewController.swift in Sources */,
