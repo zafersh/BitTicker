@@ -156,6 +156,7 @@
 				E9E8514D229C91CF00A6B087 /* App */,
 				E9E8514E229C91DE00A6B087 /* Extensions */,
 				E9E85163229C99E000A6B087 /* Models */,
+				E9E85168229CB4F100A6B087 /* Services */,
 				E9E85151229C91E700A6B087 /* Views */,
 			);
 			path = BitTicker;
@@ -239,10 +240,17 @@
 		E9E85163229C99E000A6B087 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E9E85164229C99F400A6B087 /* BitPoloniexService.swift */,
 				E9E85166229CAEA500A6B087 /* TickerData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E9E85168229CB4F100A6B087 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9E85164229C99F400A6B087 /* BitPoloniexService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

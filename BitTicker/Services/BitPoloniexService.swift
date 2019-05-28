@@ -38,22 +38,31 @@ class BitPoloniexService {
 extension BitPoloniexService : WebSocketDelegate {
     
     func websocketDidConnect(socket: WebSocketClient) {
-        print("+++++ websocketDidConnect")
+        print("--BitTicker: websocketDidConnect")
         
-        //        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
-        self.socket.write(string: "{ \"command\": \"subscribe\", \"channel\": \"1002\" }")
+        // Create command JSON string.
+        let params = [  "command" : "subscribe",
+                        "channel" : "1002"]
+        do {
+            let paramsData = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+            if let paramsJson = String(data: paramsData, encoding: .utf8) {
+                self.socket.write(string: paramsJson)
+            }
+        } catch let error {
+            assertionFailure("Failed to create JSON commmand string: \(error.localizedDescription)")
+        }
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        print("+++++ websocketDidDisconnect")
+        print("--BitTicker: websocketDidDisconnect")
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        print("+++++ websocketDidReceiveMessage: \(text)")
+        print("--BitTicker: websocketDidReceiveMessage: \(text)")
     }
     
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
-        print("+++++ websocketDidReceiveData")
+        print("--BitTicker: websocketDidReceiveData")
     }
     
 }
