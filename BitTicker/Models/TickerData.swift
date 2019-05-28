@@ -15,30 +15,30 @@ struct TickerData {
     var pairId : Int
     
     /// Last trade price
-    var lastTradePrice : Double
+    var lastTradePrice : Double?
     
     /// Lowest ask
-    var lowestAsk : Double
+    var lowestAsk : Double?
     
     /// Highest bid
-    var highestBid : Double
+    var highestBid : Double?
     
     /// Percent change in last 24 hours
-    var percentChange24 : Double
+    var percentChange24 : Double?
     
     /// Base currency volume in last 24 hours
-    var baseVolume24 : Double
+    var baseVolume24 : Double?
     
     /// Quote currency volume in last 24 hours
-    var quoteVolume24 : Double
+    var quoteVolume24 : Double?
     
     /// Is frozen
-    var isFrozen : Bool
+    var isFrozen : Bool?
     
     /// Highest trade price in last 24 hours
-    var tradePrice24h : Double
+    var tradePrice24h : Double?
     
     /// Lowest trade price in last 24 hours
-    var tradePrice24l : Double
+    var tradePrice24l : Double?
     
 }
