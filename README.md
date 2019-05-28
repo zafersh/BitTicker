@@ -5,6 +5,6 @@ Sample iOS app to subscribe to Poloniex web socket
 Don't forget to run pod install
 
 # Used PODs
-RxSwift: For reactive
-Firebase: For user login / sign up
-Starscream: For web socket
+- RxSwift: For reactive programming
+- Firebase: For user login / sign up
+- Starscream: For web socket
